@@ -1,0 +1,29 @@
+{
+    "name": "fis3-mobile",
+    "version": "1.0.0",
+    "description": "",
+    "main": "fis-conf.js",
+    "scripts": {
+        "start": "fis3 server start --type node",
+        "dev": "fis3 release -wL",
+        "test": "fis3 release test",
+        "dist": "fis3 release dist"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/brushbird/fis3-mobile"
+    },
+    "keywords": [],
+    "author": "damer",
+    "license": "ISC",
+    "devDependencies": {
+        "fis-parser-babel-6.x": "^6.24.1",
+        "fis-parser-node-sass": "^1.0.1",
+        "fis-postprocessor-px2rem": "^1.0.4",
+        "fis-preprocessor-resload": "0.0.1",
+        "fis3-deploy-skip-packed": "0.0.5",
+        "fis3-hook-relative": "^2.0.0",
+        "fis3-postpackager-loader": "^2.1.4",
+        "fis3-postprocessor-autoprefixer": "^1.0.0"
+    }
+}

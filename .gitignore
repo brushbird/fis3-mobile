@@ -1,0 +1,11 @@
+.idea
+.wing
+bin-debug
+bin-release
+resource/default.res.json
+gulpfile.js
+node_modules/**
+template/*
+template/**/*
+test/
+dist/

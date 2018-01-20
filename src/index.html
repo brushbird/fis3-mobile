@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>移动端fis3打包示例</title>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="format-detection" content="telephone=no,email=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no">
+    <meta name="fitsetting" content="width=750,height=1206,mode=0,scale=0">
+    <link rel="stylesheet" href="c/lib/reset.css">
+    <link rel="stylesheet" href="c/index.scss">
+    <link rel="stylesheet" href="c/viewport.scss">
+    <!-- 只考虑微信等正常竖屏浏览器的话，可以只引用viewport.scss -->
+    <script src="j/lib/screen-adaptor.js"></script>
+    <!-- 考虑webview的话，需要引入自适应的js -->
+</head>
+
+<body>
+    <button class="btn">点击测试模拟数据</button>
+    <script>
+        window.oPageConfig = {
+            oUrl: {
+                'getUserInfo': '/api/user',
+            }
+        };
+    </script>
+
+    <script src="j/lib/jquery-3.1.1.min.js"></script>
+    <script src="j/index.js"></script>
+</body>
+
+</html>
